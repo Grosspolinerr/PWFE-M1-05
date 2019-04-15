@@ -3,46 +3,27 @@
     <head>
     	<meta charset="utf-8">
 	    <title>EANT - Fullstack Essentials</title>
+	    <link rel="stylesheet" href="./css/style.css">
+
 	    <style>
-	    	/* Comentario: Anatomía de una regla CSS; */
-	    	/*
-	    	selector {
-	    		propiedad : valor;
-	    		propiedad : valor;
-	    		propiedad : valor;
+	    	a {
+	    		background-color: lightgreen; 
 	    	}
-	    	*/
-
-	    	h1 {color: blue;
-	    		font-family: arial;
-	    		font-size: 28px;
-	    		text-decoration: 
-	    		underline;
-
-              }
-              a {
-                 color: white; 
-                 text-decoration: none;
-                 background-color: grey;
-              }
-              a:hover { 
-              	 background-color: black;
-
-
-              }
 	    </style>
     </head>
 
     <body>
     	<h1 style="font-size: 12px">Aprendiendo Git</h1>
         <p>Git es un <strong onclick="saludar()">software</strong> de control de versiones diseñados por <a href="https://es.wikipedia.org/wiki/Linus_Torvalds" target="_blank" title="Ver más en Wikipedia">Linus Torvalds</a></p>
-  
+  		<a href="https://git-scm.com/" target="_blank">
+  		<img src="./img/git-logo.png" alt="Git for Humans" width="100">  
+  		</a>
+
         <!-- AREA DE JavaScript-->
 
-        <script>
-   	        function saludar(){
-                alert("¡Hola desde JavaScript!") 
-   	        }
-        </script>
+         <script src="./js/main.js"></script>
+         <script>
+         	window.onload = saludar
+         </script>
     </body>
 </html>

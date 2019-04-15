@@ -1,0 +1,27 @@
+/* Comentario: Anatomía de una regla CSS; */
+	    	/*
+	    	selector {
+	    		propiedad : valor;
+	    		propiedad : valor;
+	    		propiedad : valor;
+	    	}
+	    	*/
+
+h1 {color: blue;
+	    		font-family: arial;
+	    		font-size: 28px;
+	    		text-decoration: 
+	    		underline;
+
+   }
+ a {
+                 color: white; 
+                 text-decoration: none;
+                 background-color: grey;
+    }
+
+ a:hover { 
+              	 background-color: black;
+
+
+         }
