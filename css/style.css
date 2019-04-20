@@ -1,52 +1,50 @@
 /* Comentario: Anatomía de una regla CSS; */
-	    	/*
-	    	selector {
-	    		propiedad : valor;
-	    		propiedad : valor;
-	    		propiedad : valor;
+/*
+selector {
+	    propiedad : valor;
+	    propiedad : valor;
+	    propiedad : valor;
 }
 */
-
 * {
 	outline: dotted 1px red;
 }
 
 body {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 14px; 
-	color: #333;
-	margin: 0;
-	
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 14px; 
+		color: #333;
+		margin: 0;
 }
 a {
-	color: #333;
-	text-decoration: none;
+		color: #333;
+		text-decoration: none;
 }
 header {
-	background-color: #333;
-	color: #FFF;
-	padding: 15px;
-	overflow: hidden;
+		background-color: #333;
+		color: #FFF;
+		padding: 15px;
+		overflow: hidden;
 }
 header a {
-	color: #FFF;
-	display: block;
-	padding: 5px;
-	text-align: center;
+		color: #FFF;
+		display: block;
+		padding: 5px;
+		text-align: center;
 }
 header h1 {
-	margin: 0;
-	float: left;
+		margin: 0;
+		float: left;
 }
 header nav {
-	float: right;
+		float: right;
 }
 
 header ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+		margin: 0;
+		padding: 0;
+		list-style: none;
 }
 header ul li {
-	display: inline-block;
+		display: inline-block;
 }
