@@ -6,8 +6,9 @@ selector {
 	    propiedad : valor;
 }
 */
-* {
-	outline: dotted 1px red;
+
+*{
+outline: dotted 1px red;
 }
 
 body {
@@ -76,30 +77,52 @@ header ul li {
 	padding: 20px;
 }
 
-.noticia-img { 
+.noticia {
+	display: flex;
+	flex-direction: row;
+	align-items: center; /* flex-start , center , flex-end */
+	justify-content: space-around; /* flex-start , center , flex-end , space-around , space-between */
+	border-bottom: solid 1px #CCC;
+	padding: 20px 0;
+	margin: 0 20px;
+}
+
+.noticia:last-child {
+	border: none;
+}
+
+.noticia-img {  
 	width: 30%;
-	display: block;
-	float: left;
-	
 
 }
  .noticia-txt {
- 	width: 70%;
- 	display: block;
- 	float: right;
+ 	width: 60%;
+ 	
 }
-h3 {
-	font-size: 22px;
-	font-weight: 600;
-	padding: 10px;
-	color: black;
+
+.noticia-txt h3, 
+.noticia-txt p, 
+.noticia-txt blockquote {
+	margin: 20px 0;
+	line-height: 1.5;
+
 }
-p {
-	font-size: 14px;
-	font-weight: 500;
-	padding-bottom: 10px;
-	padding-right: 10px;
-	padding-left: 10px;
+
+.noticia-txt h3 {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+}.noticia-txt p a {
+	color: #000
+	font-weight: 700;
+}
+.noticia-txt blockquote {
+	font-size: 16px
+}
+
+#tabla-posiciones table {
+	margin: auto;
 }
 
 
