@@ -117,6 +117,20 @@
     </script>
     <script>
 
+      let ajax = new XMLHttpRequest()
+      ajax.open("GET", "noticias.json")
+      ajax.onload = mostrarNoticias
+      ajax.send ()
+ 
+      function mostrarNoticias(){
+
+        if( ajax.status == 200 ){ //<--Respuesta Exitosa!
+
+          console.log( ajax.response )
+
+        }
+      }
+/* Antes de jason 
      let noticia1 = {
         imagen : "sorteo-libertadores.jpg",
         titulo : "La tecnología llega a la actual edición de la Libertadores",
@@ -142,7 +156,10 @@
         bajada : "El Comité Organizador de los Juegos de la Juventud presentó su concepto de parques ante la 131a sesión del Comité Olímpico Internacional (COI) que se realizó en Lima. La ceremonia inaugural se realizará al aire libre."
     }
 
-      let noticias = [noticia1, noticia2, noticia3, noticia4]
+Antes de jason//
+*/
+
+      
 
       for(let i = 0; i < noticias.length; i++){
 
