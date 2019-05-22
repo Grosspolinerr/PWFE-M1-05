@@ -119,21 +119,34 @@
 
       let ajax = new XMLHttpRequest()
       ajax.open("GET", "noticias.json")
-      ajax.onload = function (){
+      ajax.onload =  function (){
 
         if( ajax.status == 200 ){ //<--Respuesta Exitosa!
 
+          console.log("Antes del parseo")
           console.log( ajax.response )
 
-        }
+          let noticias = JSON.parse(ajax.response)
 
+          console.log("Despues del parseo")
+          console.log( noticias )
+
+      /* Mostrar las noticias */
+
+      for(let i = 0; i < noticias.length; i++){
+
+        console.log(`Voy a imprimir la noticia que esta en la posicion: ${i}`)
+
+        crearNoticia(noticias[i].titulo, noticias[i].autor, noticias[i].bajada, noticias[i].imagen) 
       }
+      /* Fin de las noticias */
+    }
+
+  }
 
       ajax.send ()
  
-     
-     
-/* Antes de jason 
+  /* Antes de jason 
      let noticia1 = {
         imagen : "sorteo-libertadores.jpg",
         titulo : "La tecnología llega a la actual edición de la Libertadores",
@@ -164,13 +177,6 @@ Antes de jason//
 
       
 
-      for(let i = 0; i < noticias.length; i++){
-
-        console.log(`Voy a imprimir la noticia que esta en la posicion: ${i}`)
-
-        crearNoticia(noticias[i].titulo, noticias[i].autor, noticias[i].bajada, noticias[i].imagen)
-
-    }
       //crearNoticia(noticia1.titulo, noticia1.autor, noticia1.bajada, noticia1.imagen)
       //crearNoticia(noticia2.titulo, noticia2.autor, noticia2.bajada, noticia2.imagen)
       //crearNoticia(noticia3.titulo, noticia3.autor, noticia3.bajada, noticia3.imagen)
